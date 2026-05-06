@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Hub | Mening Profilim</title>
+    
+    <!-- Asosiy stillar -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Ikonkalar uchun Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Zamonaviy shrift: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Orqa fondagi animatsiyali shakllar (Glassmorphism effekti uchun) -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Asosiy oyna (Oyna effekti - Glass) -->
+    <div class="glass-container">
+        
+        <!-- Profil qismi -->
+        <header class="profile-header">
+            <div class="profile-img-container">
+                <!-- Profil rasmi -->
+                <img src="Asilbek.jpg" alt="Asilbek" class="profile-img">
+            </div>
+            <h1 class="profile-name">Ism Familiya</h1>
+            <p class="profile-bio">Grafik Dizayner va Frontend Dasturchi. O'z g'oyalaringizni hayotga tatbiq etishga yordam beraman.</p>
+        </header>
+
+        <!-- Linklar qismi -->
+        <main class="links-container">
+            <a href="#" class="link-btn">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+            <a href="#" class="link-btn">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="#" class="link-btn">
+                <i class="fas fa-briefcase"></i>
+                <span>Portfolio</span>
+            </a>
+            <a href="#" class="link-btn">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="#" class="link-btn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="#" class="link-btn contact-btn">
+                <i class="fas fa-envelope"></i>
+                <span>Bog'lanish</span>
+            </a>
+        </main>
+
+        <!-- Kichik ijtimoiy tarmoqlar qismi -->
+        <footer class="social-footer">
+            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+            <a href="#" class="social-icon" title="Behance"><i class="fab fa-behance"></i></a>
+        </footer>
+    </div>
+    
+    <!-- KELAJAK UCHUN: Django yoki boshqa API dan JSON orqali ma'lumot olish strukturasi -->
+    <!-- 
+    <script>
+        // links.json faylidan yoki Django API dan ma'lumotlarni tortib olish
+        fetch('links.json')
+            .then(response => response.json())
+            .then(data => {
+                // Ushbu qismda ma'lumotlarni tsikl yordamida HTML ichiga joylashtirish mumkin
+                console.log("Kelgan ma'lumotlar:", data);
+            })
+            .catch(error => console.error("Xatolik:", error));
+    </script>
+    -->
+</body>
+</html>

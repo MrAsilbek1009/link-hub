@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Telegram",
+    "url": "https://t.me/username",
+    "icon_class": "fab fa-telegram",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "title": "Instagram",
+    "url": "https://instagram.com/username",
+    "icon_class": "fab fa-instagram",
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "title": "Portfolio",
+    "url": "https://portfolio.com",
+    "icon_class": "fas fa-briefcase",
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "title": "GitHub",
+    "url": "https://github.com/username",
+    "icon_class": "fab fa-github",
+    "is_active": true
+  },
+  {
+    "id": 5,
+    "title": "LinkedIn",
+    "url": "https://linkedin.com/in/username",
+    "icon_class": "fab fa-linkedin",
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "title": "Bog'lanish",
+    "url": "mailto:email@example.com",
+    "icon_class": "fas fa-envelope",
+    "is_active": true
+  }
+]

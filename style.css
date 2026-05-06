@@ -1,0 +1,235 @@
+/* Asosiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a; /* To'q rangli, professional fon */
+    color: #ffffff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Orqa fondagi animatsiyali shakllar */
+.background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px); /* Katta blur orqali yorug'lik effekti */
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: #3b82f6; /* Ko'k */
+    top: -50px;
+    left: -50px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 400px;
+    height: 400px;
+    background: #8b5cf6; /* Binafsha */
+    bottom: -100px;
+    right: -50px;
+    animation: float 10s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    width: 250px;
+    height: 250px;
+    background: #ec4899; /* Pushti */
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-20px) scale(1.05); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+/* Glassmorphism Asosiy Konteyneri */
+.glass-container {
+    width: 90%;
+    max-width: 420px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.05); /* Yari-shaffof oq */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Chegara uchun nozik yorug'lik */
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Profil Qismi */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.profile-img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(45deg, #3b82f6, #ec4899); /* Gradient hoshiya */
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0f172a; /* Fonga mos oraliq (gap) effekti */
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+/* Tugmalar Konteyneri */
+.links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+}
+
+.link-btn i {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Silliq hover animatsiyalari */
+.link-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.link-btn:hover i {
+    transform: scale(1.2);
+    color: #3b82f6; /* Hoverda ikonka rangi o'zgaradi */
+}
+
+/* Alohida ajralib turuvchi Bog'lanish tugmasi */
+.contact-btn {
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), rgba(236, 72, 153, 0.2));
+    border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.contact-btn:hover {
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.4), rgba(236, 72, 153, 0.4));
+}
+
+.contact-btn:hover i {
+    color: #ec4899;
+}
+
+/* Pastki Ijtimoiy Tarmoqlar Qismi */
+.social-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #3b82f6;
+}
+
+/* Mobil qurilmalar uchun responsivlik */
+@media (max-width: 480px) {
+    .glass-container {
+        width: 95%;
+        padding: 30px 20px;
+    }
+    
+    .profile-name {
+        font-size: 22px;
+    }
+    
+    .link-btn {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+    
+    .link-btn i {
+        left: 15px;
+    }
+}
